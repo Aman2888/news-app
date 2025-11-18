@@ -14,20 +14,22 @@ const News = (props) => {
   }
 
   const updateNews = async () => {
-  props.setProgress(10);
-  setLoading(true);
+    props.setProgress(10);
+    setLoading(true);
 
-  const url = `https://gnews.io/api/v4/top-headlines?country=${props.country}&category=${props.category}&lang=en&max=${props.pageSize}&apikey=${process.env.REACT_APP_GNEWS_KEY}&page=${page}`;
+    // ← YEH NEW URL — bilkul copy-paste kar
+    const url = `https://gnews.io/api/v4/top-headlines?country=${props.country}&category=${props.category}&lang=en&max=${props.pageSize}&apikey=${process.env.REACT_APP_GNEWS_KEY}`;
 
-  let data = await fetch(url);
-  props.setProgress(50);
-  let parsedData = await data.json();
-  props.setProgress(100);
+    let data = await fetch(url);
+    props.setProgress(50);
+    let parsedData = await data.json();
+    props.setProgress(100);
 
-  setArticles(parsedData.articles || []);
-  settotalResults(parsedData.totalArticles || 0);
-  setLoading(false);
-}
+    console.log("GNews Response:", parsedData); // ← ye line add kar di temporary
+
+    setArticles(parsedData.articles || []);
+    setLoading(false);
+  }
 
   useEffect(() => {
     document.title = `${capitalizeFirstLetter(props.category)} - Shutter`;
@@ -37,17 +39,16 @@ const News = (props) => {
 
 
   const fetchMoreData = async () => {
-  const nextPage = page + 1;
-  setPage(nextPage);
+    const nextPage = page + 1;
+    setPage(nextPage);
 
-  const url = `https://gnews.io/api/v4/top-headlines?country=${props.country}&category=${props.category}&lang=en&max=${props.pageSize}&apikey=${process.env.REACT_APP_GNEWS_KEY}&page=${nextPage}`;
+    const url = `https://gnews.io/api/v4/top-headlines?country=${props.country}&category=${props.category}&lang=en&max=${props.pageSize}&apikey=${process.env.REACT_APP_GNEWS_KEY}&page=${nextPage}`;
 
-  let data = await fetch(url);
-  let parsedData = await data.json();
+    let data = await fetch(url);
+    let parsedData = await data.json();
 
-  setArticles(articles.concat(parsedData.articles || []));
-  settotalResults(parsedData.totalArticles || 0);
-};
+    setArticles(articles.concat(parsedData.articles || []));
+  };
 
 
   return (
@@ -68,8 +69,15 @@ const News = (props) => {
           <div className='row'>
             {articles.map((element) => {
               return <div className='col-md-4' key={element.url}>
-                <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""}
-                  imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
+                <NewsItem
+                  title={element.title ? element.title : ""}
+                  description={element.description ? element.description : ""}
+                  imageUrl={element.image}   // ← YE CHANGE KAR DO
+                  newsUrl={element.url}
+                  author={element.author}
+                  date={element.publishedAt}
+                  source={element.source.name}
+                />
               </div>
             })}
           </div>
