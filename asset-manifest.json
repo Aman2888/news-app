@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/shutter-app/static/css/main.dc4d6ff2.css",
-    "main.js": "/shutter-app/static/js/main.2a7e39e8.js",
+    "main.js": "/shutter-app/static/js/main.74431d4e.js",
     "static/js/787.bafbe4a8.chunk.js": "/shutter-app/static/js/787.bafbe4a8.chunk.js",
     "static/media/loading.gif": "/shutter-app/static/media/loading.d3fbaf2b81fd92c49692.gif",
     "index.html": "/shutter-app/index.html",
     "main.dc4d6ff2.css.map": "/shutter-app/static/css/main.dc4d6ff2.css.map",
-    "main.2a7e39e8.js.map": "/shutter-app/static/js/main.2a7e39e8.js.map",
+    "main.74431d4e.js.map": "/shutter-app/static/js/main.74431d4e.js.map",
     "787.bafbe4a8.chunk.js.map": "/shutter-app/static/js/787.bafbe4a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc4d6ff2.css",
-    "static/js/main.2a7e39e8.js"
+    "static/js/main.74431d4e.js"
   ]
 }
