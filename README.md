@@ -44,14 +44,16 @@ This project helped me get comfortable with real-world API usage and frontend da
 2. Run npm run start or yarn start to get the project started.
 ## Screenshots
 
-### Main Page
-![Main Page](screenshots/mainpage.png)
+## Screenshots
+
+### Main Page (Top Headlines)
+![Main Page](mainpage.png)
 
 ### Entertainment News
-![Entertainment News](screenshots/entertainmentNews.png)
+![Entertainment News](entertainmentNews.png)
 
 ### Sports News
-![Sports News](screenshots/sportsNews.png)
+![Sports News](sportsNews.png)
 
 ### Technology News
-![Technology News](screenshots/technologyNews.png)
+![Technology News](technologyNews.png)
