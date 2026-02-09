@@ -42,8 +42,7 @@ This project helped me get comfortable with real-world API usage and frontend da
 ## 🚦 Running the Project Locally
 1. Run npm install or yarn in the project directory to install the required dependencies.
 2. Run npm run start or yarn start to get the project started.
-## Screenshots
-
+   
 ## Screenshots
 
 ### Main Page (Top Headlines)
