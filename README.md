@@ -55,4 +55,3 @@ This project helped me get comfortable with real-world API usage and frontend da
 
 ### Technology News
 ![Technology News](screenshots/technologyNews.png)
-(Refreshing to fix image display)
