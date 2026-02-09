@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Live News App - React + Bootstrap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and modern **frontend-only** news application built with React.js and Bootstrap. It fetches and displays **live news** from a public API (NewsAPI.org) in real-time. No backend involved just pure frontend magic! 🚀
 
-## Available Scripts
+This project was built to practice API integration, responsive design with Bootstrap, and state management in React.
 
-In the project directory, you can run:
+## 📦 Technologies Used
+- React.js (Create React App)
+- Bootstrap 5 (for responsive UI and components)
+- Axios (for API calls)
+- NewsAPI.org (free news data source)
 
-### `npm start`
+## 🦄 Features
+Here's what you can do in the app:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- View **live top headlines** from around the world
+- Browse news by **categories** (Business, Technology, Sports, Entertainment, etc.)
+- Search for specific news topics
+- Responsive design works great on mobile, tablet, and desktop thanks to Bootstrap
+- Loading spinner while fetching data
+- Error handling for API issues
+- Clean card-based layout for news articles (title, image, description, source, date)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 How it Works
+1. On load, the app fetches top headlines from NewsAPI.
+2. News is displayed in Bootstrap cards with images, titles, summaries, and "Read More" links.
+3. Category buttons or search bar trigger new API calls.
+4. All data is fetched client-side no server needed!
 
-### `npm test`
+## 👩🏽‍🍳 The Process & What I Learned
+Started with setting up React + Bootstrap for quick responsive layout.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Focused on:
+- API integration with Axios (handling async data with useEffect)
+- Managing state for loading, error, and news articles
+- Creating reusable components (NewsCard, CategoryButtons)
+- Making the UI clean and user-friendly with Bootstrap grid and cards
+- Practicing conditional rendering (loading spinner, no results message)
 
-### `npm run build`
+This project helped me get comfortable with real-world API usage and frontend data fetching.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚦 Running the Project Locally
+1. Run npm install or yarn in the project directory to install the required dependencies.
+2. Run npm run start or yarn start to get the project started.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Main Page
+![Main Page](screenshots/mainpage.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Entertainment News
+![Entertainment News](screenshots/entertainmentNews.png)
 
-### `npm run eject`
+### Sports News
+![Sports News](screenshots/sportsNews.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Technology News
+![Technology News](screenshots/technologyNews.png)
