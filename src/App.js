@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import NavBar from './components/NavBar';
 import News from './components/News';
 
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
 
 const App = (props) => {
